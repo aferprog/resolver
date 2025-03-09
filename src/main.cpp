@@ -2,6 +2,6 @@
 #include <iostream>
 
 int main() {
-	auto mo = rslv::m0() + 10 - 5.5 - 1;
+	rslv::MathObject<double> mo = std::move(rslv::d0 + 3 + 3)-(rslv::d0+3+1);
 	std::cout << mo.resolve() << std::endl;
 }

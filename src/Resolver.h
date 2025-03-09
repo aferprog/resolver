@@ -2,14 +2,8 @@
 #include "MathObject.h"
 
 namespace rslv {
-
-	inline MathObject<double> m0() {
-		return MathObject<double>{0.};
-	}
-
-	inline MathObject<double> m1() {
-		return MathObject<double>{1.};
-	}
+	const MathObject<double> d0{ 0. };
+	const MathObject<double> d1{ 1. };
 
 	template<typename ResultType>
 	inline MathObject<ResultType> m(ResultType InitialValue) {
